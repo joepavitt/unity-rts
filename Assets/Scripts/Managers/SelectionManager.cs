@@ -3,7 +3,6 @@ using System.Collections;
 
 public class SelectionManager : MonoBehaviour {
 
-	// store the currently selected object
 	public GameObject selected;
 
 	// Use this for initialization
