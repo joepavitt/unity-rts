@@ -294,6 +294,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f616f6b03fe2be4cb82ce826d3eec60, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isSelected: 0
   unselectedMaterial: {fileID: 2100000, guid: 357c323c871535f43b073c6ee93d512c, type: 2}
   selectedMaterial: {fileID: 2100000, guid: 62c1368e0ec0ffb4aa444ee891d17682, type: 2}
 --- !u!114 &610230480
@@ -639,7 +640,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 10
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -677,15 +678,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03d06ef5cfd90ce48a1effb4b1575c1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ScrollSpeed: 15
-  ScrollEdge: 0.1
-  PanSpeed: 10
-  zoomRange: {x: -10, y: 100}
-  CurrentZoom: 0
-  ZoomSpeed: 1
-  ZoomRotation: 1
-  zoomAngleRange: {x: 20, y: 70}
-  rotateSpeed: 1
+  ScrollEdge: 0.15
+  PanSpeed: 12
+  zoomRangeMin: 5
+  zoomRangeMax: 30
+  ZoomSpeed: 5
 --- !u!114 &1074666039
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1005,6 +1002,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f616f6b03fe2be4cb82ce826d3eec60, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isSelected: 0
   unselectedMaterial: {fileID: 2100000, guid: 357c323c871535f43b073c6ee93d512c, type: 2}
   selectedMaterial: {fileID: 2100000, guid: 62c1368e0ec0ffb4aa444ee891d17682, type: 2}
 --- !u!33 &1324004261
