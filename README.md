@@ -15,3 +15,7 @@ Unity Application for experimenting with making an RTS game - teaching myself Un
 ## Architecture & Code
 
 If you're interested in how it all fits together, you can head to the wiki [here](https://github.com/jdp1g09/unity-rts/wiki)
+
+## Learning Resources
+
+I am very thankful to the many people who have uplaoded Unity Tutorials online for me to be able to follow. You can see the full list of videos I've used, and what I sued them for [here](https://github.com/jdp1g09/unity-rts/wiki/Tutorials-Used).
