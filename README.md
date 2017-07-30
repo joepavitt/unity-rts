@@ -18,4 +18,4 @@ If you're interested in how it all fits together, you can head to the wiki [here
 
 ## Learning Resources
 
-I am very thankful to the many people who have uplaoded Unity Tutorials online for me to be able to follow. You can see the full list of videos I've used, and what I sued them for [here](https://github.com/jdp1g09/unity-rts/wiki/Tutorials-Used).
+I am very thankful to the many people who have uploaded Unity Tutorials online for me to be able to follow. You can see the full list of videos and resources that I've used, and what I used them for [here](https://github.com/jdp1g09/unity-rts/wiki/Resources-&-Tutorials-Used).
