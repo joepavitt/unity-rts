@@ -23,10 +23,8 @@ namespace UnityRTS
 		Material selectedMaterial;
 
 		protected virtual void Awake () {
-			Debug.Log ("Selectable AWAKE");
 			allSelectables.Add (this);
-			myRenderer = GetComponent<Renderer> ();
-			Debug.Log (myRenderer);
+			myRenderer = GetComponentInChildren<Renderer> ();
 		}
 
 

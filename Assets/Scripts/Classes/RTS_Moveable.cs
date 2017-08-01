@@ -11,7 +11,6 @@ namespace UnityRTS
 		// Use this for initialization
 		protected override void Awake () {
 			base.Awake (); // call -parent awake function
-			Debug.Log ("Moveable AWAKE");
 			navMeshAgent = GetComponent<NavMeshAgent> ();
 			mySelectable = GetComponent<RTS_Selectable> ();
 		}

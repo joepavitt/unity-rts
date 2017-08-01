@@ -66,9 +66,10 @@ namespace UnityRTS {
 			List<RaycastResult> results = new List<RaycastResult> ();
 			EventSystem.current.RaycastAll (eventData, results);
 
-			Debug.Log (results.Count);
+			Debug.Log ("CLICK");
+			Debug.Log(results.Count);
 
-			if (results.Count < 4) {
+			if (results.Count < 3) {
 				RTS_Selectable.DeselectAll (eventData);
 			} else {
 				float myDistance = 0;

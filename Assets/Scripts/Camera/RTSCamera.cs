@@ -23,17 +23,17 @@ public class RTSCamera : MonoBehaviour {
 
 	void Update () {
 
-		if ( Input.GetKey("d")  || Input.mousePosition.x >= Screen.width * (1 - ScrollEdge)) {             
+		if ( Input.GetKey("d") ) { // || Input.mousePosition.x >= Screen.width * (1 - ScrollEdge)) {             
 			transform.Translate(Vector3.right * Time.deltaTime * PanSpeed, Space.Self );   
 		}
-		else if ( Input.GetKey("a")  || Input.mousePosition.x <= Screen.width * ScrollEdge ) {            
+		else if ( Input.GetKey("a") ) { // || Input.mousePosition.x <= Screen.width * ScrollEdge ) {            
 			transform.Translate(Vector3.right * Time.deltaTime * -PanSpeed, Space.Self );              
 		}
 
-		if ( Input.GetKey("w") || Input.mousePosition.y >= Screen.height * (1 - ScrollEdge) ) {            
+		if ( Input.GetKey("w") ) { // || Input.mousePosition.y >= Screen.height * (1 - ScrollEdge) ) {            
 			transform.Translate(Vector3.forward * Time.deltaTime * PanSpeed, Space.Self );             
 		}
-		else if ( Input.GetKey("s") || Input.mousePosition.y <= Screen.height * ScrollEdge ) {         
+		else if ( Input.GetKey("s") ) { // || Input.mousePosition.y <= Screen.height * ScrollEdge ) {         
 			transform.Translate(Vector3.forward * Time.deltaTime * -PanSpeed, Space.Self );            
 		}  
 
