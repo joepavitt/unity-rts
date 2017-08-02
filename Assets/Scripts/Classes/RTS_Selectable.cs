@@ -8,7 +8,7 @@ namespace UnityRTS
 {
 	public class RTS_Selectable : RTS_Creatable, ISelectHandler, IPointerClickHandler, IDeselectHandler, IHasOptionsUI {
 
-		// statis ensure just one copy across this across ALL instances of this class.
+		// static ensure just one copy across this across ALL instances of this class.
 		public static HashSet<RTS_Selectable> allSelectables = new HashSet<RTS_Selectable> ();
 		public static HashSet<RTS_Selectable> currentlySelected = new HashSet<RTS_Selectable> ();
 
@@ -39,7 +39,8 @@ namespace UnityRTS
 			OnSelect (eventData);
 		}
 
-		public void OnSelect(BaseEventData eventData) {
+		public void OnSelect(BaseEventData eventData)
+        {
 			currentlySelected.Add (this);
 			isSelected = true;
 			myRenderer.material = selectedMaterial;

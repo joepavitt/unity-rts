@@ -10,9 +10,11 @@ public class PlaceableBuilding : MonoBehaviour {
 	public Material defaultMaterial;
 	[HideInInspector]
 	public List<Collider> colliders = new List<Collider> ();
+    public GameObject buildingPrefab;
 
-	// Use this for initialization
-	void Start () {
+
+    // Use this for initialization
+    void Start () {
 		defaultMaterial = GetComponentInChildren<Renderer> ().material;
 	}
 	

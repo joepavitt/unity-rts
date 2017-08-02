@@ -1,11 +1,12 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityRTS;
 
 public class BuildingPlacement : MonoBehaviour {
 
 	private PlaceableBuilding placeableBuilding;
 	private Renderer placeableBuildingRenderer;
-	private Transform currentBuilding;
+	private GameObject currentBuilding;
 	private bool isPlaced;
 
 	// Use this for initialization
@@ -25,12 +26,16 @@ public class BuildingPlacement : MonoBehaviour {
 			Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
 			RaycastHit hit;
 			if (Physics.Raycast (ray, out hit, 100, 9)) {
-				currentBuilding.position = new Vector3(hit.point.x, hit.point.y, hit.point.z); 
+				currentBuilding.transform.position = new Vector3(hit.point.x, hit.point.y, hit.point.z); 
 				// isLegalPosition ();
 				if (IsLegalPosition ()) {
 					placeableBuildingRenderer.material = placeableBuilding.defaultMaterial;
 					if (Input.GetMouseButtonDown (0)) {
 						isPlaced = true;
+                        Vector3 pos = currentBuilding.transform.position;
+                        Quaternion rot = currentBuilding.transform.rotation;
+                        Instantiate(placeableBuilding.buildingPrefab, pos, rot);
+                        Destroy(currentBuilding);
 					}
 				} else {
 					placeableBuildingRenderer.material = placeableBuilding.placementNotAllowedMaterial;
@@ -50,7 +55,7 @@ public class BuildingPlacement : MonoBehaviour {
 	public void SetItem (GameObject b) 
 	{
 		isPlaced = false;
-		currentBuilding = ((GameObject)Instantiate (b)).transform;
+		currentBuilding = (GameObject)Instantiate (b);
 		placeableBuilding = currentBuilding.GetComponent<PlaceableBuilding> ();
 		placeableBuildingRenderer = placeableBuilding.GetComponentInChildren<Renderer> ();
 	}
