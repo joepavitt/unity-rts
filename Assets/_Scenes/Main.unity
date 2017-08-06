@@ -1063,7 +1063,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buildings:
   - {fileID: 1407960979810626, guid: c16c6d71e76c2b94a8af44b3c816ef49, type: 2}
-  - {fileID: 1000012100503500, guid: ab923cc0e74a9bd419d5412a44ee31ee, type: 2}
+  - {fileID: 1537832180664288, guid: c7eb244237b47ee4ebff8ebcefccd563, type: 2}
 --- !u!1 &1215481895
 GameObject:
   m_ObjectHideFlags: 0

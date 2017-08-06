@@ -40,8 +40,14 @@ public class BuildingPlacement : MonoBehaviour {
 				} else {
 					placeableBuildingRenderer.material = placeableBuilding.placementNotAllowedMaterial;
 				}
-			}
-		}
+                
+                if (Input.GetMouseButton (1))
+                {
+                    isPlaced = true;
+                    Destroy(currentBuilding);
+                }
+            }
+        }
 	}
 
 	bool IsLegalPosition() 
