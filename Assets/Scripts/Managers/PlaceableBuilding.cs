@@ -5,6 +5,7 @@ using System.Collections.Generic;
 public class PlaceableBuilding : MonoBehaviour {
 
 	public Material placementNotAllowedMaterial;
+	public GameObject buildingPrefab;
 
 	[HideInInspector]
 	public Material defaultMaterial;

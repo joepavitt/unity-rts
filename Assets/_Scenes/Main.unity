@@ -448,6 +448,48 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 862076695}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1001 &1001308402
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4000010713035192, guid: 42c20becc86a9374b9c0b5f4835b0dca, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 9.363712
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000010713035192, guid: 42c20becc86a9374b9c0b5f4835b0dca, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000010713035192, guid: 42c20becc86a9374b9c0b5f4835b0dca, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -6.0613594
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000010713035192, guid: 42c20becc86a9374b9c0b5f4835b0dca, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000010713035192, guid: 42c20becc86a9374b9c0b5f4835b0dca, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000010713035192, guid: 42c20becc86a9374b9c0b5f4835b0dca, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000010713035192, guid: 42c20becc86a9374b9c0b5f4835b0dca, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000010713035192, guid: 42c20becc86a9374b9c0b5f4835b0dca, type: 2}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 42c20becc86a9374b9c0b5f4835b0dca, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &1074666032
 GameObject:
   m_ObjectHideFlags: 0
@@ -714,8 +756,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buildings:
-  - {fileID: 1000010367043474, guid: 42c20becc86a9374b9c0b5f4835b0dca, type: 2}
-  - {fileID: 1000012100503500, guid: ab923cc0e74a9bd419d5412a44ee31ee, type: 2}
+  - {fileID: 1000013274671654, guid: c16c6d71e76c2b94a8af44b3c816ef49, type: 2}
+  - {fileID: 1000011057554366, guid: c7eb244237b47ee4ebff8ebcefccd563, type: 2}
 --- !u!1001 &1173595644
 Prefab:
   m_ObjectHideFlags: 0
