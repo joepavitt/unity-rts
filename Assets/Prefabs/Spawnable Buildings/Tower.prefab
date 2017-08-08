@@ -93,12 +93,13 @@ GameObject:
   - 33: {fileID: 33000012184924202}
   - 136: {fileID: 136000013820880994}
   - 23: {fileID: 23000014035894902}
+  - 208: {fileID: 208000011036638852}
   m_Layer: 8
   m_Name: Building - Cylinder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &4000011554562732
 Transform:
@@ -209,6 +210,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   placementNotAllowedMaterial: {fileID: 2100000, guid: 203cd8a841e56654bb1c54ccb6448eb3,
     type: 2}
+  buildingPrefab: {fileID: 0}
   defaultMaterial: {fileID: 0}
   colliders: []
 --- !u!114 &114000010819251824
@@ -324,6 +326,21 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!208 &208000011036638852
+NavMeshObstacle:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000013551850748}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.6, y: 1, z: 0.6}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!222 &222000014113369338
 CanvasRenderer:
   m_ObjectHideFlags: 1

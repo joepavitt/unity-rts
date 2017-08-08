@@ -41,12 +41,13 @@ GameObject:
   - 33: {fileID: 33000010191131976}
   - 65: {fileID: 65000011682003636}
   - 23: {fileID: 23000011654231534}
+  - 208: {fileID: 208000013796553840}
   m_Layer: 8
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &1000011722445962
 GameObject:
@@ -253,6 +254,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   placementNotAllowedMaterial: {fileID: 2100000, guid: 203cd8a841e56654bb1c54ccb6448eb3,
     type: 2}
+  buildingPrefab: {fileID: 0}
   defaultMaterial: {fileID: 0}
   colliders: []
 --- !u!114 &114000012473447858
@@ -309,6 +311,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7df25ff1397c27478a10ccd573f92fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!208 &208000013796553840
+NavMeshObstacle:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000010923633572}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.6, y: 0.5, z: 0.6}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!222 &222000010284965974
 CanvasRenderer:
   m_ObjectHideFlags: 1
