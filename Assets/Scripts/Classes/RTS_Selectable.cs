@@ -29,7 +29,6 @@ namespace UnityRTS
 			myRenderer = GetComponentInChildren<Renderer> ();
 			optionsUI = GameObject.Find ("Options UI");
 			optionsUI.SetActive (false);
-			Debug.Log (optionsUI);
 		}
 			
 		public void OnPointerClick(PointerEventData eventData) {

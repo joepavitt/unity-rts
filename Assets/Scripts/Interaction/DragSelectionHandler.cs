@@ -55,7 +55,9 @@ namespace UnityRTS {
 			selectionBoxImage.gameObject.SetActive (false);
 			foreach (RTS_Selectable selectable in RTS_Selectable.allSelectables) {
 				if (selectionRect.Contains (Camera.main.WorldToScreenPoint (selectable.transform.position))) {
-					selectable.OnSelect (eventData);
+					if (selectable.GetType().ToString() == "UnityRTS.RTS_Unit") {
+						selectable.OnSelect (eventData);
+					}
 				}
 			}
 		}
